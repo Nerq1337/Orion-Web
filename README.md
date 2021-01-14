@@ -37,3 +37,4 @@ $ npm install colors
 ```bash
 $ node server
 ```
+git tag <smsbomber>
