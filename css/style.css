@@ -1,0 +1,239 @@
+@font-face {
+	font-family: Linotte-Regular;
+	src: url("../fonts/Linotte-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	align-items: center;
+	background-color: rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	flex-shrink: 1;
+	height: 100%;
+	justify-content: center;
+	overflow: hidden;
+	width: 100%;
+	-ms-flex-align: center;
+	-ms-flex-direction: column;
+	-ms-flex-negative: 1;
+	-ms-flex-pack: center;
+	-ms-flex-positive: 0;
+	-webkit-box-align: center;
+	-webkit-box-direction: normal;
+	-webkit-box-flex: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+}
+
+input,
+#submit,
+select,
+#attacks {
+	background: rgb(77, 77, 77);
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0 0 10px rgb(77, 77, 77);
+	color: white;
+	font-family: Linotte-Regular;
+	font-size: 13px;
+	margin-bottom: 15px;
+	opacity: 0.7;
+	outline: none;
+	padding: 10px;
+	transition: opacity 0.3s;
+	width: 250px;
+	-o-transition: opacity 0.3s;
+	-webkit-box-shadow: 0 0 10px rgb(77, 77, 77);
+	-webkit-transition: opacity 0.3s;
+}
+
+#attacks {
+	height: 40px;
+}
+
+#clear {
+	background: -webkit-gradient(linear, left bottom, right top, from(rgba(117, 117, 117, 1)), color-stop(90%, rgba(33, 33, 33, 1)));
+	background: -o-linear-gradient(bottom left, rgba(117, 117, 117, 1) 0%, rgba(33, 33, 33, 1) 90%);
+	background: linear-gradient(to top right, rgba(117, 117, 117, 1) 0%, rgba(33, 33, 33, 1) 90%);
+	border-radius: 30px;
+	border: none;
+	-webkit-box-shadow: 1px 1px 30px rgba(33, 33, 33, 1);
+	box-shadow: 1px 1px 30px rgba(33, 33, 33, 1);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	position: absolute; /* добавили */
+	bottom: 0;
+	margin-bottom: 135px;
+	font-family: Linotte-Regular;
+	height: 34px;
+	outline: none;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100px;
+}
+
+ul {
+	font-size: 15px;
+	list-style-type: none;
+}
+
+#succ {
+	color: greenyellow;
+}
+
+#stopped {
+	color: aqua;
+}
+
+#err {
+	color: #ff3535;
+}
+
+label {
+	font-size: 20px;
+	font-family: Linotte-Regular;
+}
+
+#submit {
+	background-image: -o-linear-gradient(left, #fc6076, #ff9a44, #ef9d43, #e75516);
+	background-image: -webkit-gradient(linear, left top, right top, from(#fc6076), color-stop(#ff9a44), color-stop(#ef9d43), to(#e75516));
+	background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+	background-size: 300% 100%;
+	-webkit-box-shadow: 0 4px 15px 0 #fc686ebf;
+	box-shadow: 0 4px 15px 0 #fc686ebf;
+	cursor: pointer;
+	font-family: Linotte-Regular;
+	font-size: 15px;
+	height: 40px;
+	margin-left: 35px;
+	margin-top: 5px;
+	opacity: 0.5;
+	outline: none;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 200px;
+	-webkit-box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+footer {
+	background-color: rgb(51, 51, 51);
+	bottom: 0px;
+	height: 55px;
+	left: 0px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+footer div {
+	font-family: Linotte-Regular;
+	font-size: 17px;
+	margin-top: 15px;
+}
+
+select {
+	width: 125px;
+}
+
+input[name="target_number"] {
+	margin-left: 5px;
+	width: 120px;
+}
+
+option {
+	background-color: rgb(77, 77, 77);
+	border: none;
+	font-family: Linotte-Regular;
+	outline: none;
+}
+
+#logo {
+	text-shadow: 3px 3px 0px rgba(61, 61, 61, 1), 0px 0px 7px rgb(87, 87, 87);
+	margin-left: 45px;
+	font-size: 75px;
+	font-family: Linotte-Regular;
+}
+
+section {
+	position: fixed;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+	color: #ff9a44;
+	text-decoration: none;
+	transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+	-webkit-transition: color 0.2s ease-out;
+}
+
+a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #f00;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+	-o-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+	transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+}
+
+a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#submit:hover {
+	opacity: 1;
+	letter-spacing: 3px;
+}
+
+input:hover {
+	opacity: 1;
+}
+
+#clear:hover {
+	letter-spacing: 2px;
+}
+
+#attacks:hover {
+	opacity: 1;
+}
+
+input:focus {
+	opacity: 1;
+}
+
+.logs {
+	display: none;
+}
+
+a:hover {
+	color: #fc6076;
+}
+
+select:hover {
+	opacity: 1;
+}

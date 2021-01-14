@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Orion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/line.css" />
+	</head>
+	<body>
+		<header>
+			<section class="seperator-wrapper">
+				<div class="seperator gradient"></div>
+			</section>
+		</header>
+
+		<section class="gradient-border">
+			<div id="logo">Orion</div>
+			<form name="infoForm">
+				<label id="infoForm__targetNumber">Target Number</label> <br />
+				<select id="country" class="form-control">
+					<option value="ru">Russia +7</option>
+					<option value="ua">Ukraine +380</option>
+					<option value="by">Belorus +375</option>
+				</select>
+
+				<input type="text" id="phone" name="target_number" /> <br />
+
+				<label>Attack Logs</label> <br />
+				<div id="attacks">
+					<ul id="attacksList">
+						<li id="empty">Empty :|</li>
+					</ul>
+					<br />
+					<button id="clear">Clear Logs</button> <br />
+				</div>
+
+				<label>Number Of Repeats</label> <br />
+				<input type="text" name="loops" /> <br />
+
+				<button type="submit" value="start" id="submit">Start Attack</button> <br />
+			</form>
+		</section>
+
+		<footer>
+			<div id="nerq">Made with ❤️ by <a href="https://github.com/Nerq1337">nerq1337</a></div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/inputmask.js"></script>
+		<script src="./js/jquery.inputmask.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
